@@ -26,8 +26,7 @@ let User = mongoose.model('User',new mongoose.Schema({
         maxLength:10,
     },
     pass:{
-        type:String,
-        
+        type:String,        
     }
 }))
 module.exports = {User}
