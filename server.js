@@ -36,15 +36,12 @@ app.post('/user',(req,res)=>{
     let i = 0;
     let uid = new mongoose.Types.ObjectId();
     
-    console.log(++i);
     
     let user_auth = new User_auth({
         _id : new mongoose.Types.ObjectId(),
         user_id: uid,
         password : req.body.password,
     })
-    
-    console.log(++i)
 
     user_auth.save().then(user_auth_obj =>{
         let user_info = new User_info({
@@ -55,8 +52,6 @@ app.post('/user',(req,res)=>{
             post : req.body.post,
             user_type : req.body.user_type, 
         })
-        
-        console.log(++i)
         
         user_info.save().then((user)=>{
             
@@ -72,16 +67,11 @@ app.post('/user',(req,res)=>{
             console.log(next);
             console.log("Check ", i)
         })
-        //4
-        console.log(++i)
         //console.log("THis is just a warning !")
     },(err) =>{
-        console.log(++i)
         res.status(400).send({success:false,message:'Failed to validate'});
-        console.log(++i)
         console.log("ERROR : Failed to validate a POST /addUser  request at user auth.save !")
         console.log(err)
-        console.log(++i)
     
     }).catch(e => {
         console.log("Check")
@@ -158,10 +148,7 @@ app.post('/complaint',(req,res)=>{
         is_resolved : req.body.isResolved,
         description : req.body.description,
     });
-    console.log(++i);
     newComplaint.save().then(obj =>{
-        
-        console.log(++i);
         
         User_info.findOneAndUpdate({
             _id:uid
@@ -172,7 +159,6 @@ app.post('/complaint',(req,res)=>{
         },done =>{
             console.log(++i)
         })
-        console.log(++i);
 
         res.status(200).send({success:true})
     },err=>{
