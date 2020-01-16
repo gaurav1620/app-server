@@ -1,6 +1,7 @@
 // Ⓒ  Team Fsociety 2020"
 require('dotenv').config()
 
+let homepage = require('./homepage/index.html')
 let express = require('express')
 let bodyParser = require('body-parser')
 let app = express();
@@ -18,8 +19,8 @@ app.use(bodyParser.json())
 //app.use(bodyParser.urlencoded({ extended: true }));
 
 //DEBUG
-app.get('/',(req,res)=>res.send('<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>'))
-app.post('/users',(req,res)=>res.send('<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>'))
+app.get('/',(req,res)=>res.send(homepage)
+app.post('/users',(req,res)=>res.send(homepage)
 //Debug
 
 //Add a new User
@@ -229,7 +230,7 @@ app.get('/user',(req,res)=>{
 
 //Default response
 app.get('/*',(req,res)=>{
-    res.send('<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>')
+    res.send(homepage)
 })
 
 //Port listening 
