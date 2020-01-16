@@ -1,5 +1,4 @@
 // Ⓒ  Team Fsociety 2020"
-
 require('dotenv').config()
 
 let express = require('express')
@@ -19,8 +18,8 @@ app.use(bodyParser.json())
 //app.use(bodyParser.urlencoded({ extended: true }));
 
 //DEBUG
-app.get('/',(req,res)=>res.send("HOme"))
-app.post('/users',(req,res)=>res.send("Test"))
+app.get('/',(req,res)=>res.send('<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>'))
+app.post('/users',(req,res)=>res.send('<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>'))
 //Debug
 
 //Add a new User
