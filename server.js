@@ -235,7 +235,7 @@ app.get('/*',(req,res)=>{
 
 //Port listening 
 app.listen(port, ()=>{
-    console.log("Ⓒ  Team Fsociety 2020 &#128526)
+    console.log("Ⓒ  Team Fsociety 2020 &#128526")
     console.log(`Connected on port : ${port}`)
 })
 
