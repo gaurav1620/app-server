@@ -230,7 +230,7 @@ app.get('/user',(req,res)=>{
 
 //Default response
 app.get('/*',(req,res)=>{
-    res.send("<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>")
+    res.send('<h1 align="center">Ⓒ  Team Fsociety 2020 &#128526 </h1>')
 })
 
 //Port listening 
