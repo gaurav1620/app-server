@@ -1,3 +1,5 @@
+// Ⓒ  Team Fsociety  Ƹ̵̡Ӝ̵̨̄Ʒ"
+
 require('dotenv').config()
 
 let express = require('express')
@@ -228,6 +230,7 @@ app.get('/user',(req,res)=>{
 
 //Port listening 
 app.listen(port, ()=>{
+    console.log("Ⓒ  Team Fsociety  Ƹ̵̡Ӝ̵̨̄Ʒ")
     console.log(`Connected on port : ${port}`)
 })
 
