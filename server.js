@@ -20,7 +20,7 @@ app.use(bodyParser.json())
 
 //DEBUG
 app.get('/',(req,res)=>res.send(homepage)
-app.post('/users',(req,res)=>res.send(homepage)
+app.post('/users',(req,res)=>res.send(homepage))
 //Debug
 
 //Add a new User
