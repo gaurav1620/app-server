@@ -230,12 +230,12 @@ app.get('/user',(req,res)=>{
 
 //Default response
 app.get('/*',(req,res)=>{
-    res.send("<h4>Ⓒ  Team Fsociety 2020 </h4>")
+    res.send("<h4>Ⓒ  Team Fsociety 2020 &#128526 </h4>")
 })
 
 //Port listening 
 app.listen(port, ()=>{
-    console.log("Ⓒ  Team Fsociety 2020 ")
+    console.log("Ⓒ  Team Fsociety 2020 &#128526)
     console.log(`Connected on port : ${port}`)
 })
 
