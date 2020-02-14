@@ -1,4 +1,4 @@
-// Ⓒ  Team Fsociety 2020"
+// Ⓒ  Team Fsociety 2020
 require('dotenv').config()
 
 let {homepage} = require('./homepage/index.js')
